@@ -1,30 +1,8 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
-/* the following code will be replaced by await function */
-
-//----------------------------------------------------------------
-// inquirer
-//   .prompt([
-//     /* Pass your questions in here */
-//     {
-//       type: 'input',
-//       message: 'What is your user name?',
-//       name: 'username',
-//     }
-//   ])
-//   .then((answers) => {
-//     // Use user feedback for... whatever!!
-//   })
-//   .catch((error) => {
-//     if (error.isTtyError) {
-//       // Prompt couldn't be rendered in the current environment
-//     } else {
-//       // Something else went wrong
-//     }
-//   });
-//----------------------------------------------------------------
-
-
+const fs = require("fs");
+const util = require("util");
+const writeMDFile= util.promisify(fs.writeFile);
 // TODO: Create an array of questions for user input
 const questions = [
   {
@@ -89,20 +67,94 @@ const questions = [
     // WHEN I enter my email address
     type:"input",
     message: "Enter your email address",
-    name:"title",
+    name:"userEmail",
   },
   {
     type:"input",
-    message: "Enter youre project title",
-    name:"title",
+    message: "Enter your deployed link",
+    name:"liveLink",
+  },
+  {
+    type:"input",
+    message: "Paste Acceptance Criteria",
+    name:"acceptanceCriteria",
   },
 ];
-
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function generateMDfile(promptOutput){
+  return `
+  
+# ${promptOutput.title}
+  ${promptOutput.description}
+  ${promptOutput.license}
+  [A deployed version can be viewed here.](${promptOutput.liveLink})
+  
+---
+## Contents
+1. [About](#about)
+    1. [User Story](#user%20story)
+    2. [Acceptance criteria](#acceptance%20criteria)
+    3. [Visuals](#visuals)
+    4. [Build](#build)
+2. [Installation](#installation)
+3. [License](#license)
+4. [Contributing](#contributing)
+5. [Tests](#tests)
+---
+## About
+  ${promptOutput.usageInfo}
+---
+## User Story
+  
+---
+## Acceptance Criteria
+  Paste acceptance criteria :
+  
+  ${promptOutput.acceptanceCriteria}
+---
+## Visuals:
+    
+---
+## Installation:
+  ${promptOutput.isntallInstructions}
 
-// TODO: Create a function to initialize app
-function init() {}
+---
+## License
+  License used for this project - ${promptOutput.license}
 
+---
+## Contributing:
+  
+ Steps :
+ ${promptOutput.contribution}
+
+---
+## Tests:
+  ${promptOutput.testInstr}
+---
+## Contact Information:
+* GitHub Username: ${promptOutput.githubUser}
+* GitHub Email: ${promptOutput.userEmail}
+  
+`;
+}
+
+
+
+//////////////Using ASYNC///////////// function writeToFile(fileName, data) {}
+
+
+//TODO: Create a function to initialize app
+//function init() {}
+async function init(){
+  try{
+      const answers=await inquirer.prompt(questions);
+      await console.log("Complete");
+      let readMefile=generateMDfile(answers);
+      await writeMDFile("ReadMe.md",readMefile);
+  }catch(err){
+      throw err;
+  }
+}
 // Function call to initialize app
 init();
