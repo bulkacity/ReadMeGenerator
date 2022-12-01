@@ -3,7 +3,7 @@
 # README Generator Starter Code
   The following code will ask you a series of questions utilizing inquiery. Then a template of a readME file will be saved.
   MIT
-  [A deployed version can be viewed here.](https://bulkacity.github.io/MyPortfolio/ReadMeGenerator/)
+  [A deployed version can be viewed here.](https://bulkacity.github.io/ReadMeGenerator/)
   
   ![Example](./assets/ReadMeExample.png)
 ---
