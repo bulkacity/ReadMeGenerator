@@ -90,7 +90,7 @@ function generateMDfile(promptOutput){
   [A deployed version can be viewed here.](${promptOutput.liveLink})
   
 ---
-## Contents
+# Contents
 1. [About](#about)
     1. [User Story](#user%20story)
     2. [Acceptance criteria](#acceptance%20criteria)
@@ -110,10 +110,10 @@ function generateMDfile(promptOutput){
 ## Acceptance Criteria
   Paste acceptance criteria :
   
-  ${promptOutput.acceptanceCriteria}
+  #### ${promptOutput.acceptanceCriteria}
 ---
 ## Visuals:
-    
+![Example](./assets/ReadMeExample.png)
 ---
 ## Installation:
   ${promptOutput.isntallInstructions}
