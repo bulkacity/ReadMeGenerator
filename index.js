@@ -151,7 +151,7 @@ async function init(){
       const answers=await inquirer.prompt(questions);
       await console.log("Complete");
       let readMefile=generateMDfile(answers);
-      await writeMDFile("ReadMe.md",readMefile);
+      await writeMDFile("README.md",readMefile);
   }catch(err){
       throw err;
   }
