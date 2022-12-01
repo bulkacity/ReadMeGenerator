@@ -28,48 +28,67 @@ const inquirer = require('inquirer');
 // TODO: Create an array of questions for user input
 const questions = [
   {
+    //WHEN I enter my project title
     type:"input",
-    message: "Enter youre project title",
+    message: "Enter your project title",
     name:"title",
   },
   {
+    //WHEN I enter a description
     type:"input",
-    message: "Enter youre project title",
-    name:"title",
+    message: "Enter a description of your project",
+    name:"description",
   },
   {
+    //WHEN I enter installation instructions
     type:"input",
-    message: "Enter youre project title",
-    name:"title",
+    message: "Enter any installation instructions",
+    name:"isntallInstructions",
   },
   {
+    //WHEN I enter usage information
     type:"input",
-    message: "Enter youre project title",
-    name:"title",
+    message: "Enter usage information",
+    name:"usageInfo",
   },
   {
+    //WHEN I enter contribution guidelines
     type:"input",
-    message: "Enter youre project title",
-    name:"title",
+    message: "Enter contribution guidelines",
+    name:"contribution",
   },
   {
+    //WHEN I enter test instructions
     type:"input",
-    message: "Enter youre project title",
-    name:"title",
+    message: "Enter your test instructions",
+    name:"testInstr",
   },
   {
-    type:"input",
-    message: "Enter youre project title",
-    name:"title",
+    //WHEN I choose a license for my application from a list of options
+    type:"list",
+    message: "Please SELECT the license you used for this project.",
+    name:"license",
+    choices: [
+      "GNU AGPLv3",
+      "GNU GPLv3",
+      "GNU LGPLv3",
+      "Mozilla",
+      "MIT",
+      "Apache",
+      "Boost",
+      "INPUT LATER",
+    ],
   },
   {
+    //WHEN I enter my GitHub username
     type:"input",
-    message: "Enter youre project title",
-    name:"title",
+    message: "Enter your GitHub username",
+    name:"githubUser",
   },
   {
+    // WHEN I enter my email address
     type:"input",
-    message: "Enter youre project title",
+    message: "Enter your email address",
     name:"title",
   },
   {
