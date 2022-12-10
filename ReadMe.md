@@ -1,11 +1,10 @@
 
   
-# README Generator Starter Code
-  The following code will ask you a series of questions utilizing inquiery. Then a template of a readME file will be saved.
-  MIT
+# ReadMe Generator Module 9
+  The project is a command-line driven application, that shall be utilized along side your web app development process. A readme file with standard template will be generated and saved.
+  INPUT LATER
   [A deployed version can be viewed here.](https://bulkacity.github.io/ReadMeGenerator/)
   
-  ![Example](./assets/ReadMeExample.png)
 ---
 # Contents
 1. [About](#about)
@@ -19,37 +18,37 @@
 5. [Tests](#tests)
 ---
 ## About
-  After installing packages run code node index.js
+  Download as required, clone the repository for later usage.
 ---
 ## User Story
-  
+  [Watch a video linked here :](https://www.youtube.com/watch?v=8u8TlOuPSG0)
 ---
-# Acceptance Criteria
+## Acceptance Criteria
   Paste acceptance criteria :
   
-  #### GIVEN a command-line application that accepts user input.WHEN I am prompted for information about my application repository.THEN a high-quality, professional README.md is generated with the title of my project and. sections entitled Description, Table of Contents, Installation, Usage, License,,Contributing, Tests, and Questions,WHEN I enter my project titleTHEN this is displayed as the title of the READMEWHEN I enter a description, installation instructions, usage information, contribution  guidelines, and test instructions THEN this information is added to the sections of the README entitled Description,  Installation, Usage, Contributing, and Tests WHEN I choose a license for my application from a list of options THEN a badge for that license is added near the top of the README and a notice is added tothe section of the README entitled License that explains which license the application iscovered under WHEN I enter my GitHub username THEN this is added to the section of the README entitled Questions, with a link to my  GitHub profile WHEN I enter my email address THEN this is added to the section of the README entitled Questions, with instructions on  how to reach me with additional questions WHEN I click on the links in the Table of Contents THEN I am taken to the corresponding section of the README.
+  #### GIVEN a command-line application that accepts user input.WHEN I am prompted for information about my application repository.THEN a high-quality, professional README.md is generated with the title of my project and. sections entitled Description, Table of Contents, Installation, Usage, License,,Contributing, Tests, and Questions,WHEN I enter my project titleTHEN this is displayed as the title of the READMEWHEN I enter a description, installation instructions, usage information, contribution guidelines, and test instructions THEN this information is added to the sections of the README entitled Description, Installation, Usage, Contributing, and Tests WHEN I choose a license for my application from a list of options THEN a badge for that license is added near the top of the README and a notice is added tothe section of the README entitled License that explains which license the application iscovered under WHEN I enter my GitHub username THEN this is added to the section of the README entitled Questions, with a link to my GitHub profile WHEN I enter my email address THEN this is added to the section of the README entitled Questions, with instructions on how to reach me with additional questions WHEN I click on the links in the Table of Contents THEN I am taken to the corresponding section of the README.
 ---
-### Visuals:
+## Visuals:
 ![Example](./assets/ReadMeExample.png)
 ---
 ## Installation:
-   Ensure to run npm install , "inquirer": "^8.2.4".
+  Run npm install, and ensure to change the parameters for the package "inquirer": "^8.2.4".
 
 ---
 ## License
-  License used for this project - MIT
+  License used for this project - INPUT LATER
 
 ---
 ## Contributing:
   
  Steps :
- clone the repository as needed. No contributions allowed.
+ No contribution from outside sources are allowed, acceptable to clone and create alternate versions of noted program. 
 
 ---
 ## Tests:
-  Verify that a test file and questions are answered, expecting a generateFile.js testing file on V2 release.
+  Test instructions to be implemented on a later iteration, conduct generateMDfile.js test. We will expect a series of answers to be stored.
 ---
-### Contact Information:
+## Contact Information:
 * GitHub Username: BulkAcity
-* GitHub Email: bg@bulkacity.com
+* GitHub Email: BG@bulkacity.com
   
